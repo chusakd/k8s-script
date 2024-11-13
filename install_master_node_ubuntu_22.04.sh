@@ -1,4 +1,8 @@
 ./install_k8s_common.sh
+sudo kubeadm config images pull
+#mkdir -p $HOME/.kube
+#sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+#sudo chown $(id -u):$(id -g) $HOME/.kube/config
 ufw enable
 sudo ufw allow 6443/tcp
 sudo ufw allow 2379:2380/tcp
