@@ -1,6 +1,13 @@
 # k8s-script
  Linux shell script to inistall k8s control plan and worker node.
 
-curl -O https://network-gateway.openvpn.com/network-gate/api/v1/scripts/VWJ1bnR1IDI0LjA0/network/ubuntu_24_04.sh
-chmod +x ubuntu_24_04.sh
-./ubuntu_24_04.sh
+git clone https://github.com/chusakd/k8s-script.git
+cd k8s-script
+sudo chmod +x install_*
+
+#For Master/Control plan Node Run
+$  install_master_node_ubuntu_22.04.sh
+
+#For Worker Node Run
+$ install_worker_node_ubuntu_22.04.sh
+
